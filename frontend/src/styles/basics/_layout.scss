@@ -1,0 +1,12 @@
+.gallery-container {
+    margin: 80px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 20%;
+}

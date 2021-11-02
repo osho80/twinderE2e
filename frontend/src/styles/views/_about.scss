@@ -1,0 +1,101 @@
+.about-main {
+    width: 900px;
+    height: 80vh;
+    margin: 20px auto;
+    .about-toggle {
+        color: $clr1;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    p {
+        color: $clr2;
+    }
+    
+}
+
+.about-twinder {
+    background-color: $clr3;
+    padding: 20px 0;
+    border-radius: 20px;
+    
+    p, h2 {
+        margin: auto;
+        max-width: 95%;
+        line-height: 2rem;
+        font-size: large;
+    }
+}
+
+.about-developers {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+   
+    .developer-preview {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .developer-details {
+        display: flex;
+        flex-direction: column;
+        border-radius: 12px;
+        .close-dev-details-modal {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            top: 10px;
+            left: 95%;
+            z-index: 2;
+            position: relative;
+            display: inline-block;
+            background-color: $clr1;
+            color: $clr2;
+            font-weight: bold;
+            font-size: large;
+            border-color: $clr2;
+        }
+        p {
+            padding: 10px;
+        }
+    }
+
+
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    
+}
+
+.developer-details {
+    background-color: $clr3;
+}
+
+@media (max-width: $mobile-breakpoint) {
+    .about-main {
+        width: 95vw;
+    }
+
+    .about-developers {
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+       
+        .developer-preview {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+    
+        .developer-details {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}

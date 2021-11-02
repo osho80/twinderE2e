@@ -1,0 +1,20 @@
+.login-container {
+    height: 81.1vh;
+    text-align: center;
+
+    h1 {
+        margin-block-start: rem(30px);
+    }
+
+    .login-form {
+        > * {
+            margin: rem(10px) 0;
+            width: 40%;
+        }
+
+        .sign-up-link {
+            text-decoration: none;
+            color: $clr2;
+        }
+    }
+}

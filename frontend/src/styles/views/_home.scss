@@ -1,0 +1,100 @@
+.home-page {
+    height: 84vh;
+    width: 100%;
+    position: relative;
+    animation-name: background;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    
+    
+    h2 {
+        font-family: DidactGothic;
+        color: rgb(250, 248, 243);
+        text-shadow: -0.5px 0 black, 0 0.5px black, 1px 0 black, 0 -0.5px black;
+        font-size: 30px;
+        margin-left:0px;
+        
+        &:first-child{
+            font-size: 40px;
+            margin-top: 7%;
+        } 
+        &:last-child{
+            margin-left:100px;
+        }
+    }
+    .action-call {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        h3 {
+            // font-family: Anton;
+            // font-family: caveat;
+            color:  rgb(250, 248, 243);;
+            font-size: 1.5rem;
+            
+            margin-left: 20px;
+        }
+    }
+
+    
+}
+
+@keyframes background {
+    0% {
+        background-image: url("../../imgs/background-imgs/background1.jpg");
+    }
+    100% {
+        background-image: url("../../imgs/background-imgs/background3.jpg");
+    }
+}
+
+
+@keyframes mobile-background {
+    0% {
+        background-image: url("../../imgs/background-imgs/home-romatic.jpg");
+    }
+    50% {
+        background-image: url("../../imgs/background-imgs/home-romatic2.jpg");
+    }
+    100% {
+        background-image: url("../../imgs/background-imgs/home-romatic3.jpg");
+    }
+}
+
+
+@media (max-width: $narrow-breakpoint) {
+    .home-page {
+        height: 93vh;
+        animation-name: mobile-background;
+        transition: mobile-background 10s;
+        h2{
+            
+            &:first-child{
+                font-size: 30px;
+                margin-top:320px
+            } 
+            &:last-child{
+                font-size: 30px;
+                margin-left:100px;
+            } 
+        }
+
+        .action-call {
+            //margin-top: 7%;
+            margin-bottom: 2%;
+            text-shadow: -0.5px 0 $clr2, 0 0.5px $clr2, 1px 0 $clr2, 0 -0.5px $clr2;
+            // text-shadow: -0.5px 0 black, 0 0.5px black, 1px 0 black, 0 -0.5px black;
+            line-height: 0.8rem;
+           h3 {
+               font-size: 1rem;
+               padding: 0;
+           }
+        }
+    }
+}

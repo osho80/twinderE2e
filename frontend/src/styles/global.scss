@@ -1,0 +1,32 @@
+// Setup
+@import "setup/variables.scss";
+@import "setup/functions.scss";
+@import "setup/mixins.scss";
+@import "setup/typography.scss";
+
+// Basics
+@import "basics/helpers.scss";
+@import "basics/layout.scss";
+@import "basics/base.scss";
+@import "basics/links.scss";
+@import "basics/buttons.scss";
+
+// Components
+@import "./components/user-preview.scss";
+@import "./components/user-profile.scss";
+@import "./components/post-list.scss";
+@import "./components/navbar.scss";
+@import "./components/_footer.scss";
+@import "./components/chat.scss";
+@import "./components/edit-profile.scss";
+@import "./components/login.scss";
+@import "./components/sign-up.scss";
+@import "./components/match-list.scss";
+// @import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+// Views
+@import "./views/encounter.scss";
+@import "./views/home.scss";
+@import "./views/addpost.scss";
+@import "./views/about.scss";
+

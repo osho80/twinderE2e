@@ -1,0 +1,166 @@
+.encounter-display {
+    box-sizing: border-box;
+    background-color: $clr3;
+    display: grid;
+    
+    grid-template-columns: minmax(20px, 1fr) minmax(470px, 3fr) minmax(470px, 3fr) minmax(20px, 1fr);
+    grid-template-rows: minmax(20px, 1fr) minmax(300px, 6fr) minmax(20px, 1fr);
+    height: 83vh;
+    // gap: 20px
+    
+}
+
+.encounter-display button {
+    border-radius: 12px;
+    border: 1px solid $clr2;
+    background-color: $clr4 lighten($color: #000000, $amount: 0)
+}
+
+.encounter-display button:hover{
+    cursor: pointer;
+    color:red;
+}
+
+.enc-action-zone {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    margin: 20px;
+}
+
+
+.encounter-profile-overview {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: inline;
+    margin: 20px;
+    background-color: $clr3;
+    display: flex;
+    // margin-top: 55px;
+    // width: 250px;
+}
+
+.enc-posts {
+    background-color: $clr3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 20px;
+
+}
+
+// .encounter-profile-img {
+//     grid-column-start: 2;
+//     grid-column-end: 3;
+//     grid-row-start: 1;
+//     grid-row-end: 4;
+//     //background-color: $clr5;
+//     margin: 20px;
+    
+// }
+
+.encounter-profile-img img {
+    max-height: 100%;
+    //object-fit: contain;
+}
+
+.enc-nav-btns {
+    // grid-column-start: 1;
+    // grid-column-end: 2;
+    // grid-row-start: 2;
+    // grid-row-end: 3;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    
+    
+}
+
+.enc-yesno-btns{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+
+}
+
+.encounter-profile-overview {
+    background-color: $clr3;
+    margin-top: 55px;
+    // width: 250px;
+}
+
+
+.enc-view-profile-btn {
+    grid-column-start: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    width: 70px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-left: 37%;
+    margin-top: 83px;
+    // margin-top: 80%;
+    
+    
+}
+
+.enc-action-btns button{
+    position: absolute;
+}
+.enc-nope-btn {
+    // margin-right: 100px; 
+    width: 50px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.enc-horray-btn {
+    width: 50px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.enc-right-btn {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.enc-left-btn {
+    margin-left: 20px;
+    transform: rotate(180deg);
+    width: 40px;
+    height: 40px;
+    
+    
+}
+
+// @include for-narrow-layout {
+//     .encounter-profile-img{
+
+//         background-color: green;
+//     }
+// }
+
+@media (max-width: 460px) {
+    .encounter-display {
+        background-color: green;
+    }
+    
+    .encounter-profile-img {
+        
+        background-color: green;
+    }
+}

@@ -1,0 +1,25 @@
+.signup-container {
+    height: 155vh;
+    text-align: center;
+
+    h1 {
+        margin-block-start: rem(10px);
+        font-size: 3.575rem;
+    }
+
+    .sign-up-form {
+        text-align: start;
+        > * {
+            width: 40%;
+            margin-block-end: rem(10px);
+        }
+
+        .img-upload-lable {
+            text-align: center;
+        }
+        
+        .sign-up-btn {
+            margin-block-start: rem(10px);
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.edit-profile {
+    height: 165vh;
+    text-align: center;
+
+    h2 {
+        margin: rem(20px) 0 0 0;
+    }
+
+    .edit-profile-form {
+        text-align: start;
+        >* {
+            width: 50%;
+            margin: rem(10px);
+        }
+    }
+}

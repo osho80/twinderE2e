@@ -1,0 +1,59 @@
+.add-post {
+    padding-block-start: rem(50px);
+    height: 84.2vh;
+    text-align: center;
+    position: relative;
+
+    h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 3.475rem;
+    }
+
+    .textarea {
+        text-align: start;
+        width: 50%;
+        margin: 20px auto;
+    }
+
+    .emoji-btn {
+        position: absolute;
+        right: 26%;
+        bottom: 27.7%;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    .emoji-mart {
+        position: absolute;
+        right: 30%;
+        bottom: 27%;
+    }
+
+    .post-btn {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 540px) {
+    .add-post {
+        // padding-block-start: rem(130px);
+
+        .textarea {
+            width: 80%;
+        }
+
+        .emoji-btn {
+            right: 13%;
+            bottom: 9%;
+        }
+
+        .emoji-mart {
+            right: 3%;
+            bottom: 17.5%;
+            width: 90% !important;
+            z-index: 10;
+        }
+    }
+}

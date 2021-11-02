@@ -1,0 +1,43 @@
+.encounter-display {
+    box-sizing: border-box;
+    
+}
+.encounter-profile-img {
+    background-color: $clr5;
+    margin: 5px;
+    height: 85vh;
+    width: 70vw;
+}
+
+.encounter-profile-overview {
+    background-color: $clr3;
+    margin: 5px;
+    width: 250px;
+}
+
+.enc-action-btns button{
+    position: absolute;
+}
+.enc-nope-btn {
+    // margin-right: 100px; 
+    bottom: 60px;
+    left: 100px;
+}
+
+.enc-horray-btn {
+    bottom: 60px;
+    left: 245px; 
+}
+.enc-right-btn {
+    bottom: 260px;
+    left: 300px;
+}
+
+.enc-left-btn {
+    bottom: 260px;
+    left: 70px;
+    transform: rotate(180deg)
+    
+    
+}
+

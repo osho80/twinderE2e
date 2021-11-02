@@ -1,0 +1,328 @@
+.page {
+    // widt h: 100vw;
+    .user-profile-page {
+        // position: relative;
+        width: 90%;
+        // margin-top:20px;
+        // margin-bottom: 15px;
+        // height: 84.5vh;
+    }
+}
+
+.user-profile {
+    // background-color:$clr5;
+    width: 800px;
+    margin: 10px 0 10px 0;
+    height: 80vh;
+    // max-width: 800px;
+    // border-radius: 20px;
+    // -webkit-box-shadow: 7px 7px 14px -4px rgba(163,161,160,0.92);
+    // -moz-box-shadow: 7px 7px 14px -4px rgba(163,161,160,0.92);
+    // box-shadow: 7px 7px 14px -4px rgba(163,161,160,0.92);
+
+    .details-area {
+        height: 95%;
+        max-width: 80%;
+        padding: 10px;
+        font-size: 13px;
+        margin-left:15px;
+        // box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+        // .user-post{
+        //     width: 100%;
+        //     min-height: 80px;
+        //     background-color: lightblue;
+        //     border:1px solid grey;
+        //     padding:2px;
+        // }
+        .user-detils {
+            // background-color: $clr4;
+            flex-direction: column;
+            padding: 10px 0 10px 0;
+            border-radius: 10px 10px 0 0;
+            font-size: 20px;
+            color: $clr5;
+            font-size: 15px;
+
+            & :first-child {
+                font-size: 25px;
+                color: $clr6;
+            }
+        }
+        .posts-section {
+            max-height: 200px;
+            overflow-y: scroll;
+            //  border: 1px solid #000;
+            border-radius: 0;
+
+            /* width */
+            &::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                border-radius: 10px;
+                background: #f1f1f1;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                border-radius: 13px;
+                background: #888;
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: $clr2;
+            }
+        }
+        .about {
+            // margin-top: 10px;
+            padding: 3px;
+            // width: 80%;
+            // overflow-y: scroll;
+        }
+        // .edit-btn button {
+        //     margin: 20px;
+        //     border-radius: 12px;
+        //     border: 1px solid $clr2;
+        //     padding:3px 6px;
+        //     color: $clr2;
+        .edit-btn {
+            width: 30px;
+            //margin: 1rem auto;
+            img {
+                height: 30px;
+            }     
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .preferences {
+            font-size: 20px;
+            // border-bottom: 1px solid rgb(201, 199, 199);
+            margin: 0 0 2px 5px;
+            width: 100px;
+        }
+    }
+}
+
+.main-photo,
+.details-area {
+    width: 60%;
+}
+
+///////////////pictures////////////
+
+.main-section {
+    position: relative;
+    height: 90%;
+    // width: 75%;
+
+    .carousel-root {
+        height: 100%;
+        width: 380px;
+
+        .carousel {
+            .slider-wrapper {
+                width: 103%;
+                // ul li{margin-right:10px;}
+                .slider{
+                    border-radius:  20px 0;
+                    .slide{
+                        border-radius:  20px 0;
+                        min-height: 367px;
+                        // margin:0 10px 0 10px;
+                        img {
+                            border-radius: 20px 0;
+                            width: 100%;
+                            height: 100%;
+                            max-height: 367px;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+                }
+                .slide-section img {
+                    position: relative;
+                }
+            }
+            .thumbs-wrapper {
+                margin: 0;
+                .thumbs {
+                    padding: 0 rem(20px);
+                    .thumb{
+                        width: rem(60px);
+                        height: rem(60px);
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .btn-section {
+        position: absolute;
+        top: 65%;
+        width: 380px;
+        // opacity: 0;
+        // height: 40%;
+        // background-color: green;
+    }
+    // .btn-section:hover{
+    //     opacity: 1;
+
+    // }
+    .addPhoto-btn {
+        top: 65%;
+        position: absolute;
+    }
+}
+
+.main-section .slide:hover {
+    // opacity: 0.7;
+    border-radius: 20px 0;
+}
+
+.main-section:hover {
+    transition: 1s ease;
+    opacity: 1;
+
+    .main-pic {
+        height: 100%;
+        width: 100%;
+    }
+
+    .plus,
+    .btn-display {
+        transition: 1s ease;
+        opacity: 1;
+    }
+}
+
+// .btn-section{
+//     position: absolute;
+//     bottom: 10%;
+//     width: 60%;
+//     height: 40%;
+//     // background-color: green;
+// }
+
+.btn-display {
+    transition: 0.5s ease;
+    opacity: 0;
+    width: 100%;
+    // background-color: blue;
+    justify-content: space-between;
+    // height: 40%;
+}
+
+//////////////////////
+
+.love {
+    height: 60px;
+    width: 50px;
+    // transform: rotate(25deg);
+    object-fit: contain;
+    cursor: pointer;
+}
+
+
+
+.pass{
+    height:50px;
+    width: 50px;
+    // background-image: url('../imgs/pass.png');
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    background-size: cover;
+    cursor: pointer;
+    // object-fit: contain;
+}
+
+.plus {
+    transition: 0.5s ease;
+    opacity: 0;
+    height: 50px;
+    width: 50px;
+    // background-image: url('../imgs/plus3.jpg');
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    background-size: cover;
+    cursor: pointer;
+    // object-fit: contain;
+}
+
+.gender {
+    height: 20px;
+    width: 20px;
+}
+
+.user-btns {
+    justify-content: space-around;
+    align-items: center;
+}
+
+/////////////////////////////////////responcive/////////////////////
+
+@media (max-width: $narrow-breakpoint) {
+    .user-profile-page {
+        height: 100%;
+        //margin-top: 15px;     //Oshri
+        .user-profile {
+            height: auto;
+            flex-direction: column;
+            margin:0;
+
+            .main-section {
+                width: 60%;
+                align-items: center;
+                .btn-section {
+                    top: 75%;
+                    .btn-display {
+                        justify-content: space-around;
+                    }
+                }
+                .carousel-root {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    height: auto;
+                    // width: auto;
+                    .carousel {width: 90%;
+                    .slider-wrapper .slider{
+                        border-radius: 0; 
+                        .slide{ 
+                            border-radius: 0;
+                            img {
+                                border-radius: 0;
+                                max-height: 100%;
+                                width: 95%;
+                                }
+                            }
+                        }
+                    }}
+            }
+
+            .details-area {
+                max-width: 100%;
+                       .posts-section{
+                           width: 94%;
+                           margin: 10px 0 10px 0;
+                   }
+            }
+        }
+    }
+    .main-photo,
+    .details-area {
+        width: 90%;
+    }
+
+    
+}
+

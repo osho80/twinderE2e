@@ -1,0 +1,174 @@
+.chat {
+    position: absolute;
+    bottom: rem(43px);
+    right: rem(35px);
+    background-color: #ffffff;
+    width: rem(250px);
+    border-block-start: 1px solid $clr4;
+    border-inline-start: 1px solid $clr4;
+    border-inline-end: 1px solid $clr4;
+    border-radius: 10px 10px 0 0;
+    z-index: 7;
+
+    .chat-header {
+        // background-color: $clr4;
+        border-bottom: 1px rgb(224, 224, 224) solid;
+        border-radius: 10px 10px 0 0;
+        padding: rem(5px);
+
+        .chat-header-btns {
+            > * {
+                width: rem(20px);
+                border-radius: 10px;
+                border: none;
+                padding: 2px;
+                margin: 0 2px;
+            }
+        }
+    }
+
+    .chat-content {
+        height: rem(200px);
+        .chat-msgs {
+            height: 100%;
+            overflow-y: auto;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+
+            > * {
+                width: 95%;
+                padding: rem(8px);
+
+                .msg-info {
+                    margin-block-end: rem(5px);
+                    padding: 0;
+                }
+
+                p {
+                    word-wrap: break-word;
+                    border-radius: 20px;
+                    padding: rem(10px);
+                    // left:0;
+                }
+            }
+            .my-msg {
+                p {
+                    background-color: #eee9f3;
+                    margin-left: 0px;
+                    width: 80%;
+                    margin: 2px;
+                }
+                // p:nth-child(even){
+                //     background-color: lightgreen;
+
+                // }
+            }
+            .targetUser-msg {
+                p {
+                    width: 80%;
+                    background-color: lightgreen;
+                    margin-left: 55px;
+                }
+            }
+
+            &::-webkit-scrollbar {
+                width: 10px;
+            }
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+            &::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+        }
+    }
+
+    .chat-footer {
+        width: 100%;
+        .chat-inputs {
+            width: 100%;
+            .msg-input {
+                width: 100%;
+            }
+
+            .emoji-btn {
+                position: absolute;
+                right: 2%;
+                bottom: 10%;
+                cursor: pointer;
+            }
+
+            .sendMsg-btn {
+                width: 100%;
+                padding: 1px;
+            }
+        }
+    }
+
+    button {
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .chat {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        position: fixed;
+
+        .chat-header {
+            border-radius: 0;
+            height: 7.5%;
+            position: sticky;
+            margin-top: 5%;
+
+            .chat-header-user-info{
+                position: absolute;
+                z-index: 12;
+                //min-height: 20vh;
+            }
+
+            .chat-header-btns {
+                .hide-chat-btn {
+                    display: none;
+                }
+                .close-chat-btn {
+                    width: rem(30px);
+                    height: rem(30px);
+                    right: 4%;
+                    position: absolute;
+                }
+            }
+        }
+
+        .chat-content {
+            height: 80%;
+            margin-bottom: 17%;
+        }
+
+        .chat-footer {
+            position: fixed;
+            bottom: 0;
+            align-self: center;
+            width: 90%;
+
+            .chat-inputs {
+                .emoji-btn {
+                    z-index: 7;
+                    right: 5%;
+                    bottom: 55%;
+                }
+            }
+        }
+    }
+}

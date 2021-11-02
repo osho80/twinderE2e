@@ -1,0 +1,23 @@
+.footer {
+    font-family: montserrat;
+    position: fixed;
+    bottom: 0;
+    height: rem(43px);
+    width: 100%;
+    border-block-start: 1px solid $clr5;
+    opacity: .8;
+    background-color: #fff;
+
+    >* {
+        margin: 0 rem(40px);
+    }
+
+    .about-link {
+        cursor: pointer;
+    }
+    
+    @media (max-width: $narrow-breakpoint) {
+        display: none;
+    }
+}
+

@@ -1,0 +1,62 @@
+.match-list {
+  position: absolute;
+  z-index: 3;
+  overflow-y: scroll;
+  top: 3.45rem;
+  right: rem(44.3px);
+  height: rem(150px);
+  background-color: white;
+  width: 180px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  > :not(:last-child) {
+    border-block-end: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .match-prev {
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s;
+
+    .match-prev-msg {
+      opacity: 0.7;
+    }
+
+    &:hover {
+      background-color: $clr3;
+    }
+
+    &.match-prev-active {
+      background-color: $clr3;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+@media (max-width: $narrow-breakpoint) {
+  .match-list {
+    height: rem(201px);
+    top: 3.25rem;
+    right: 1.66875rem;
+  }
+}
